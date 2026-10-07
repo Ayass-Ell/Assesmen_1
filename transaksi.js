@@ -64,6 +64,7 @@ async function simpanSewa(ev) {
     nama_penyewa: document.getElementById('namaPenyewa').value.trim(),
     durasi_jam: Number(document.getElementById('durasi').value)
   };
+  
   try {
     await api('/transaksi_sewa/create.php', { method: 'POST', body: data });
     modalSewa.hide();

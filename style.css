@@ -1,7 +1,5 @@
 :root { --biru: #1e56d8; --biru-tua: #123a96; --bg: #f3f6fc; }
-body { 
-    background: var(--bg); 
-}
+body { background: var(--bg); }
 .sidebar { 
     width: 220px; 
     min-height: 100vh; 
@@ -44,6 +42,7 @@ body {
     color: var(--biru); 
     font-weight: 600; 
 }
+
 .estimasi { 
     border-left: 4px solid var(--biru); 
     background: #f1f5ff; 

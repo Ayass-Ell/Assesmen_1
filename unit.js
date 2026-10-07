@@ -63,6 +63,7 @@ async function simpanUnit(ev) {
     harga_per_jam: Number(document.getElementById('harga').value),
     status: document.getElementById('status').value
   };
+
   try {
     if (id) {
       await api('/unit/update.php', { method: 'PUT', body: { id_unit: Number(id), ...data } });
@@ -77,12 +78,13 @@ async function simpanUnit(ev) {
 
 async function hapusUnit(id, nama) {
   const c = await Swal.fire({
-    title: 'Hapus Unit PS?',
+    title: 'Hapus Unit?',
     text: `Apakah Anda yakin ingin menghapus '${nama}'? Semua riwayat transaksi unit ini akan terpengaruh!`,
     icon: 'warning', showCancelButton: true,
     confirmButtonText: 'Ya, Hapus!', cancelButtonText: 'Batal',
     confirmButtonColor: '#dc3545'
   });
+  
   if (!c.isConfirmed) return;
   try {
     await api('/unit/delete.php', { method: 'DELETE', body: { id_unit: id } });
