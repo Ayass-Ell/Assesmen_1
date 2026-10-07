@@ -1,0 +1,53 @@
+:root { --biru: #1e56d8; --biru-tua: #123a96; --bg: #f3f6fc; }
+body { 
+    background: var(--bg); 
+}
+.sidebar { 
+    width: 220px; 
+    min-height: 100vh; 
+    background: linear-gradient(180deg, var(--biru), var(--biru-tua)); 
+}
+
+.sidebar .brand { 
+    color: #fff; 
+    font-weight: 700; 
+    padding: 1rem; 
+    letter-spacing: .5px; 
+}
+
+.sidebar .nav-link { 
+    color: #dbe6ff; 
+    padding: .7rem 1rem; 
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active { 
+    background: rgba(255,255,255,.15); 
+    color: #fff; 
+}
+
+.btn-primary { 
+    background: var(--biru); 
+    border-color: var(--biru); 
+}
+
+.btn-primary:hover { 
+    background: var(--biru-tua); 
+    border-color: var(--biru-tua); 
+}
+
+.modal-header.bg-biru { 
+    background: var(--biru); 
+    color: #fff; 
+}
+
+.card-header-biru { 
+    color: var(--biru); 
+    font-weight: 600; 
+}
+.estimasi { 
+    border-left: 4px solid var(--biru); 
+    background: #f1f5ff; 
+    padding: .75rem 1rem; 
+}
+
+footer { font-size: .8rem; color: #7a869a; }
